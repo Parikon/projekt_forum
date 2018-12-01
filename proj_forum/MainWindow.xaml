@@ -5,8 +5,64 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:proj_forum"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+         Title="Lista projektów" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        
+        <TabControl >
+            <TabItem Header="Baza">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FF424B56" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FF424B56">
+                    <Button x:Name="button_dodaj" Content="Dodaj" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Foreground="White" BorderBrush="White">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="button_zmien" Content="Zmień" HorizontalAlignment="Left" Margin="90,10,0,0" VerticalAlignment="Top" Width="75" Foreground="White" BorderBrush="White">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="button_usun" Content="Usuń" HorizontalAlignment="Left" Margin="170,10,0,0" VerticalAlignment="Top" Width="75" Foreground="White" BorderBrush="White">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="button_aktualny" Content="Aktualny" HorizontalAlignment="Left" Margin="250,10,0,0" VerticalAlignment="Top" Width="75" Foreground="White" BorderBrush="White">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <DataGrid x:Name="datagrid_projekt_lista" Margin="10,60,10,10"/>
+                    <Label Content="Tabela :" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Foreground="White"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="INFO">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FF424B56" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FF424B56">
+                    <Label Content="Program oparto na silniku bazy danych SQLite - www.sqlite.org. " HorizontalAlignment="Left" Margin="8,7,0,0" VerticalAlignment="Top" Foreground="White"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
