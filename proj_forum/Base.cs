@@ -14,7 +14,7 @@ namespace proj_forum
         // można ją spokojnie przenieść do konstruktora jako zmienną prywatną
         // ale może się przyda więc zostaje
         private string path;
-        // do połączenia wystarczy db_con ustawiony raz w konstruktorze
+        // do połączenia wystarczy db_con ustawiony raz w konstruktorze 
         private SQLiteConnection db_con;
 
 
